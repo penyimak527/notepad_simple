@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css')?>">
+</head>
+<body>
+
+<hr>
+    <div class="formtambah">
+    <form action="<?php echo base_url() . 'notee/TambahNote'?>" method="post" autocomplete="off">
+        <label for="">Nama</label>
+        <input type="text" name="nama" required>
+        <label for="">Judul</label>
+        <input type="text" name="judul" required>	
+        <label for="">Content</label>
+        <textarea cols="20" rows="5" name="content" required></textarea>
+        <!-- <input type="text" name="content" required> -->
+         <div class="button">
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <a href="<?= base_url('notee/nootes')?>" class="btn-success">Kembali</a></div>
+    </form>
+    </div>
+
+</body>
+</html>
+
